@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Navbar from "./components/Navbar";
-import Footer from './components/Footer.js';
-import About from './pages/About';
-import Contact from './pages/Contact.js';
-import Projects from './pages/Projects';
-import Resume from './pages/Resume';
+import Navbar from "./components/navbar.js";
+import Footer from './components/footer.js';
+import About from './pages/about.js';
+import Contact from './pages/contact.js';
+import Projects from './pages/projects';
+import Resume from './pages/resume.js';
 import React from 'react';
 
 // Uses Routes from react to set components to be viewed at all times and pages apart 
