@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 // Contact page where an email can be sent
 // EmailJS template imported from wedsite
 export const Contact = () => {
   const form = useRef();
-  const historyRelocate = useHistory();
+  const navigate = useNavigate();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,7 +14,7 @@ export const Contact = () => {
     emailjs.sendForm('service_5bsda6l', 'template_85cczge', form.current, 'vN8vOITrxzssD3rqP')
       .then((result) => {
           console.log(result.text);
-          historyRelocate.push('/react-profile')
+          navigate.push('/react-profile')
       }, (error) => {
           console.log(error.text);
       });

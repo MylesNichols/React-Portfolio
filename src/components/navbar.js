@@ -1,17 +1,20 @@
-import React from "react";
-import GithubLogo from '../img/github-logo.png';
-import LinkedInLogo from '../img/Linkedin.png';
-import TwitterLogo from '../img/twitter-logo.png';
+import { Link } from "react-router-dom";
+import "../styles/nav.css"
 
-// Footer that displays github, twitter and linkedin links on every route
-const Footer = () => {
+// Serves as a header for all pages 
+const Navbar = () => {
     return ( 
-        <div className="footer">
-            <a className="logo" href="https://github.com/MylesNichols"><img className="logo" src={GithubLogo} alt="Github" /></a>
-            <a className="logo" href="https://www.linkedin.com/in/myles-nichols-40b662215/"><img className="logo" src={LinkedInLogo} alt="LinkdIn" /></a>
-            <a className="logo" href="https://twitter.com/mylesnicholsdev"><img className="logo" src={TwitterLogo} alt="Twitter" /></a>
-        </div>
+        <nav className="navbar">
+            <h1>Myles Nichols</h1>
+            <div className="links">
+            <ul>
+                <li><Link to="/about">About Me</Link></li>
+                <li><Link to="/projects">Projects</Link></li>
+                <li><Link to="/contact">Contact Me</Link></li>
+                <li><Link to="/resume">Resume</Link></li>
+            </ul>
+            </div>
+        </nav>
      );
 }
-
-export default Footer;
+export default Navbar;

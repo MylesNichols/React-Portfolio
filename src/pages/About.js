@@ -1,4 +1,4 @@
-import ProfPic from "../img/myles-and-moon"
+import ProfPic from "../img/myles-and-moon.jpg"
 
 // Adds about section
 const About = () => {

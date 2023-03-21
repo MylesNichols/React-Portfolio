@@ -1,5 +1,3 @@
-import { react } from "react";
-import '..styles/project.css';
 import grynd from '../img/grynd-app-sc.png'
 import hubl from '../img/hubl-app-sc.png'
 import note from '../img/notes.png'
